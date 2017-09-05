@@ -49,5 +49,13 @@ Test with httpie
 ```
 
 
+## Option push to ECS
+```
+aws ecr get-login --region eu-west-1 
+docker tag newsbridge/sample-akka-http-docker:latest ############.dkr.ecr.eu-west-1.amazonaws.com/sample-akka-http-docker:latest 
+docker push ############.dkr.ecr.us-west-2.amazonaws.com/sample-akka-http-docker:latest
+```
+
+
 ### License
 This library is licensed under the Apache License, Version 2.0.
